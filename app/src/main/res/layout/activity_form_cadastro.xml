@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".FormCadastro">
+    
+    
+    
+<TextView
+    android:id="@+id/tituloCadastro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/tituloCadastro"
+    android:textSize="50dp"
+    android:textColor="@color/Black"
+    android:textStyle="bold"
+    android:layout_margin="100dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+
+    <EditText
+        android:id="@+id/editarNome"
+        style="@style/Edit_Text"
+        android:layout_marginTop="124dp"
+        android:hint="Nome"
+        android:textColorHint="@color/BackBranco"
+        android:inputType="text"
+        android:textSize="18dp"
+        android:background="@drawable/button"
+        app:layout_constraintEnd_toEndOf="@id/tituloCadastro"
+        app:layout_constraintStart_toStartOf="@id/tituloCadastro"
+        app:layout_constraintTop_toTopOf="@id/tituloCadastro" />
+
+    <EditText
+        android:id="@+id/editarEmail"
+        style="@style/Edit_Text"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/button"
+        android:textColorHint="@color/BackBranco"
+        android:textSize="18dp"
+        android:drawableRight="@drawable/ic_email"
+        app:layout_constraintTop_toBottomOf="@id/editarNome"
+        app:layout_constraintStart_toStartOf="@id/editarNome"
+        app:layout_constraintEnd_toEndOf="@id/editarNome" />
+
+    <EditText
+        android:id="@+id/editarSenha"
+        style="@style/Edit_Text"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        android:background="@drawable/button"
+        android:textColorHint="@color/BackBranco"
+        android:textSize="18dp"
+        android:drawableRight="@drawable/ic_eye"
+        app:layout_constraintTop_toBottomOf="@id/editarEmail"
+        app:layout_constraintStart_toStartOf="@id/editarEmail"
+        app:layout_constraintEnd_toEndOf="@id/editarEmail" />
+
+    <EditText
+        android:id="@+id/editarSenha2"
+        style="@style/Edit_Text"
+        android:hint="Confirmar senha:"
+        android:textSize="18dp"
+        android:inputType="numberPassword"
+        android:background="@drawable/button"
+        android:textColorHint="@color/BackBranco"
+        android:drawableRight="@drawable/ic_eye"
+        app:layout_constraintTop_toBottomOf="@id/editarSenha"
+        app:layout_constraintStart_toStartOf="@id/editarSenha"
+        app:layout_constraintEnd_toEndOf="@id/editarSenha" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/botaoCadastrar"
+        style="@style/Button"
+        android:text="CADASTRAR"
+        app:layout_constraintTop_toBottomOf="@id/editarSenha2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

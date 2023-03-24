@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //tonalidades mais escuras "PRETO"
+    <color name="Black">#000000</color>
+    <color name="grey11">#1C1C1C</color>
+    <color name="grey21">#363636</color>
+    <color name="grey31">#4F4F4F</color>
+    <color name="DimGray">#696969</color>
+
+
+    //tonalidades mais claras "AZUL"
+    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="LightSkyBlue">#87CEFA</color>
+    <color name="SkyBlue">#87CEEB</color>
+
+
+    //tonalidades mais claras de "VERDE"
+    <color name="MediumSpringGreen">#00FA9A</color>
+    <color name="SpringGreen">#00FF7F</color>
+    <color name="PaleGreen">#98FB98</color>
+
+
+    //cores oficiais
+    <color name="BackgroundAll">#5C7996</color>
+    <color name="BackTextos">#40BFBC</color>
+    <color name="BackBotoesMenu">#C5D2D6</color>
+    <color name="BackIcones">#008B8B</color>
+    <color name="BackBranco">#FFFFFF</color>
+    <color name="Botoes">#008B8B</color>
+    <color name="Bordas">#BFBFBF</color>
+
+
+
+
+</resources>
