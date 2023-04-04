@@ -1,89 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/BackBranco"
-        tools:context=".MenuPrincipal"
-        tools:layout_editor_absoluteX="-204dp"
-        tools:layout_editor_absoluteY="0dp">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
 
 
-        <ImageView
-            android:id="@+id/conta"
-            android:layout_width="218dp"
-            android:layout_height="190dp"
-            android:src="@drawable/ic_conta"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MenuPrincipal"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center">
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/botaoPh"
-            style="@style/BottonFuncionalidades"
-            android:layout_width="192dp"
-            android:layout_height="239dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="204dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/menu_principal_fundo_botoes"
-            android:text="Ph"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/conta"
-            tools:ignore="MissingConstraints" />
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="290dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
 
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/botaoTemperatura"
-            style="@style/BottonFuncionalidades"
-            android:layout_width="192dp"
-            android:layout_height="239dp"
-            android:layout_marginStart="204dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/menu_principal_fundo_botoes"
-            android:text="Temperatura"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/conta" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/botaoConfig"
-            style="@style/BottonFuncionalidades"
-            android:layout_width="192dp"
-            android:layout_height="239dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="204dp"
-            android:layout_marginStart="10dp"
-            android:background="@drawable/menu_principal_fundo_botoes"
-            android:hint="Config"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/botaoPh"
-            tools:ignore="MissingConstraints" />
+    <ImageButton
+        android:id="@+id/pH_icon"
+        android:layout_width="310dp"
+        android:layout_height="380dp"
+        android:background="@drawable/menu_principal_fundo_botoes"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_ph"
+        android:contentDescription="Abrir configurações"
+        android:scaleType="centerCrop"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/botaoParciais"
-            style="@style/BottonFuncionalidades"
-            android:layout_width="192dp"
-            android:layout_height="239dp"
-            android:layout_marginStart="204dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/menu_principal_fundo_botoes"
-            android:text="Parciais"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/botaoTemperatura" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.core.widget.NestedScrollView>
+    <ImageButton
+        android:id="@+id/temp_icon"
+        android:layout_width="310dp"
+        android:layout_height="380dp"
+        android:background="@drawable/menu_principal_fundo_botoes"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_temperatura"
+        android:contentDescription="Abrir configurações"
+        android:scaleType="centerCrop"/>
+
+
+    <ImageButton
+        android:id="@+id/config_icon"
+        android:layout_width="310dp"
+        android:layout_height="380dp"
+        android:background="@drawable/menu_principal_fundo_botoes"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_configurar"
+        android:contentDescription="Abrir configurações"
+        android:scaleType="centerCrop"/>
+
+
+    <ImageButton
+        android:id="@+id/ic_cont"
+        android:layout_width="310dp"
+        android:layout_height="380dp"
+        android:background="@drawable/menu_principal_fundo_botoes"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_acesso_conta"
+        android:contentDescription="Abrir configurações"
+        android:scaleType="centerCrop"/>
+
+
+
+
+</LinearLayout>
+</HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
